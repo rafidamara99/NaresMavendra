@@ -1,240 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nares Mavendra</title>
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Font Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-</head>
-<body class="bg-color-primary text-color-white font-WorkSans">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-color-primary text-color-white font-WorkSans">
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <header class="sticky top-0 z-50 bg-color-primary">
-        <nav class="container flex justify-between items-center">
-            <div class="py-5 text-color-secondary font-bold text-3xl">
-                <a href="#home">
-                    Nares<span class="text-color-white">Mavendra.</span>
-                </a>
-            </div>
-            <div>
-                <ul class="hidden lg:flex items-center space-x-6 font-semibold">
-                    <li><a href="#home" class=" hover:text-color-secondary ease-in-out duration-200">Home</a></li>
-                    <li><a href="#about" class=" hover:text-color-secondary ease-in-out duration-200">About</a></li>
-                    <li><a href="#gallery" class=" hover:text-color-secondary ease-in-out duration-200">Gallery</a></li>
-                    <li><a href="#any" class=" hover:text-color-secondary ease-in-out duration-200">Any</a></li>
-                </ul>
-            </div>
+      <nav class="container flex justify-between items-center">
+        <div class="py-5 text-color-secondary font-bold text-3xl">
+          <a href="#home">
+            Nares<span class="text-color-white">Mavendra.</span>
+          </a>
+        </div>
+        <div>
+          <ul class="hidden lg:flex items-center space-x-6 font-semibold">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-color-secondary ease-in-out duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="hover:text-color-secondary ease-in-out duration-200"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="hover:text-color-secondary ease-in-out duration-200"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#any"
+                class="hover:text-color-secondary ease-in-out duration-200"
+                >Any</a
+              >
+            </li>
+          </ul>
+        </div>
 
-            <!-- Mobile Screen -->
-             <div id="hamburger" class="lg:hidden cursor-pointer z-50">
-                <i class="fa-solid fa-bars"></i>
-             </div>
+        <!-- Mobile Screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+          <i class="fa-solid fa-bars"></i>
+        </div>
 
-             <div id="menu" class="hidden bg-color-primary-dark h-[60vh] absolute inset-0">
-                <ul class="h-full grid place-items-center py-20">
-                    <li><a id="hLink" href="#home" class=" hover:text-color-secondary ease-in-out duration-200">Home</a></li>
-                    <li><a id="hLink" href="#about" class=" hover:text-color-secondary ease-in-out duration-200">About</a></li>
-                    <li><a id="hLink" href="#gallery" class=" hover:text-color-secondary ease-in-out duration-200">Gallery</a></li>
-                    <li><a id="hLink" href="#any" class=" hover:text-color-secondary ease-in-out duration-200">Any</a></li>
-                </ul>
-             </div>
-        </nav>
+        <div
+          id="menu"
+          class="hidden bg-color-primary-dark h-[60vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hLink"
+                href="#home"
+                class="hover:text-color-secondary ease-in-out duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#about"
+                class="hover:text-color-secondary ease-in-out duration-200"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#gallery"
+                class="hover:text-color-secondary ease-in-out duration-200"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#any"
+                class="hover:text-color-secondary ease-in-out duration-200"
+                >Any</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main / hero Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <main>
-        <section id="home" class="relative">
-            <div class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-            <div class="w-80 h-80 bg-color-secondary absolute bottom-0 right-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-            <div class="container pt-24 pb-12">
-                <div class="flex flex-col lg:gap-10 lg:mx-10 items-center justify-center z-20 md:flex-row md:pr-10">
-                    <div class="text-center mb-12 md:text-left md:w-1/2 order-2 md:order-1 mt-4">
-                        <h2 class="text-gray-300 font-semibold text-lg lg:text-xl mb-3">Hallo semuanya 👋, saya</h2>
-                        <h1 class="text-4xl md:text-4xl lg:text-5xl font-bold leading-snug mb-4">Nares <span class="text-color-secondary">Mavendra</span></h1>
-                        <p class="text-gray-400 font-semibold text-lg leading-relaxed mb-6 bg-gray-800 p-4 rounded-lg shadow-md">
-                            <i class="fa-solid fa-quote-left text-color-secondary text-2xl mr-2"></i>
-                            Saat dunia berputar dalam krisis politik dan ekonomi, saya muncul ke dunia ini, siap membawa kebahagiaan dan sedikit kekacauan!
-                        </p>
-                        <div class="scroll-down mt-8 lg:mt-12 flex items-center justify-center lg:justify-start">
-                            <div class="flex items-center">
-                                <i class="fa-solid fa-chevron-down text-color-secondary text-2xl mr-2 animate-fade-down"></i>
-                                <span class="text-gray-400 font-semibold text-lg animate-fade-down">Scroll Down for More</span>
-                                <i class="fa-solid fa-chevron-down text-color-secondary text-2xl ml-2 animate-fade-down"></i>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="w-72 order-1 md:order-2 mb-4">
-                        <img src="img/Naresprofile1.jpeg" alt="Nares Mavendra" class="max-w-full rounded-full drop-shadow-xl transform hover:scale-105 transition-transform duration-500" />
-                    </div>
+      <section id="home" class="relative">
+        <div
+          class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div
+          class="w-80 h-80 bg-color-secondary absolute bottom-0 right-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div class="container pt-24 pb-12">
+          <div
+            class="flex flex-col lg:gap-10 lg:mx-10 items-center justify-center z-20 md:flex-row md:pr-10"
+          >
+            <div
+              class="text-center mb-12 md:text-left md:w-1/2 order-2 md:order-1 mt-4"
+            >
+              <h2 class="text-gray-300 font-semibold text-lg lg:text-xl mb-3">
+                Hallo semuanya 👋, saya
+              </h2>
+              <h1
+                class="text-4xl md:text-4xl lg:text-5xl font-bold leading-snug mb-4"
+              >
+                Nares <span class="text-color-secondary">Mavendra</span>
+              </h1>
+              <p
+                class="text-gray-400 font-semibold text-lg leading-relaxed mb-6 bg-gray-800 p-4 rounded-lg shadow-md"
+              >
+                <i
+                  class="fa-solid fa-quote-left text-color-secondary text-2xl mr-2"
+                ></i>
+                Saat dunia berputar dalam krisis politik dan ekonomi, saya
+                muncul ke dunia ini, siap membawa kebahagiaan dan sedikit
+                kekacauan!
+              </p>
+              <div
+                class="scroll-down mt-8 lg:mt-12 flex items-center justify-center lg:justify-start"
+              >
+                <div class="flex items-center">
+                  <i
+                    class="fa-solid fa-chevron-down text-color-secondary text-2xl mr-2 animate-fade-down"
+                  ></i>
+                  <span
+                    class="text-gray-400 font-semibold text-lg animate-fade-down"
+                    >Scroll Down for More</span
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down text-color-secondary text-2xl ml-2 animate-fade-down"
+                  ></i>
                 </div>
+              </div>
             </div>
-        </section>
+
+            <div class="w-72 order-1 md:order-2 mb-4">
+              <img
+                src="img/Naresprofile1.jpeg"
+                alt="Nares Mavendra"
+                class="max-w-full rounded-full drop-shadow-xl transform hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ About Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ About Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section id="about" class="py-8 lg:py-24 relative">
-        <h2 class="text-3xl font-bold text-color-secondary text-center mb-12">About Me</h2>
-        <div class="container flex flex-col lg:flex-row items-center">
-            <!-- Blob start -->
-            <div class="w-80 h-80 bg-color-blob absolute top-0 -left-5 lg:top-28 lg:left-40 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-            
-            <div class="w-80 h-80 bg-color-secondary absolute bottom-0 right-5 lg:bottom-28 lg:right-40 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-            <!-- Blob end -->
-            
-            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end mb-8 lg:mb-0">
-                <img src="img/Nareshero1.jpeg" alt="Nares Mavendra" class="w-72 h-auto rounded-tl-3xl rounded-br-3xl drop-shadow-xl transform hover:scale-105 transition-transform duration-500" />
-            </div>
-            
-            <div class="w-full lg:w-1/2 flex items-center">
-                <!-- Kartu untuk tampilan mobile -->
-                <div class="bg-white bg-opacity-20 rounded-lg p-6 shadow-md flex-1 lg:hidden">
-                    <div class="text-lg font-semibold mb-4 text-color-secondary">
-                        Sang villain kecil ini telah muncul ke permukaan pada :
-                    </div>
-                    <div class="flex flex-col space-y-6 lg:space-y-5 text-gray-200">
-                        <div class="flex items-center">
-                            <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                                <i class="fa-solid fa-calendar-alt text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                            </div>
-                            <span>Tanggal : 15 Juli 2024</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                                <i class="fa-solid fa-map-marker-alt text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                            </div>
-                            <span>Lokasi : Jakarta, Indonesia</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                                <i class="fa-solid fa-weight-scale text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                            </div>
-                            <span>Bobot : 2,7 kg</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                                <i class="fa-solid fa-ruler text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                            </div>
-                            <span>Ukuran : - cm</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                                <i class="fa-solid fa-hospital text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                            </div>
-                            <span>Rumah Sakit : RS Firdaus</span>
-                        </div>
-                    </div>
-                </div>
+      <h2 class="text-3xl font-bold text-color-secondary text-center mb-12">
+        About Me
+      </h2>
+      <div class="container flex flex-col lg:flex-row items-center">
+        <!-- Blob start -->
+        <div
+          class="w-80 h-80 bg-color-blob absolute top-0 -left-5 lg:top-28 lg:left-40 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
 
-                <!-- Informasi untuk tampilan besar -->
-                <div class="hidden lg:flex flex-col space-y-6 lg:space-y-5 pl-10 font-semibold text-lg text-gray-300">
-                    <div class="text-xl font-semibold mb-4 pr-40 text-color-secondary">
-                        Sang villain kecil ini telah muncul ke permukaan pada :
-                    </div>
-                    <div class="flex items-center">
-                        <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                            <i class="fa-solid fa-calendar-alt text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                        </div>
-                        <span class="text-gray-200">Tanggal : 15 Juli 2024</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                            <i class="fa-solid fa-map-marker-alt text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                        </div>
-                        <span>Lokasi : Jakarta, Indonesia</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                            <i class="fa-solid fa-weight-scale text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                        </div>
-                        <span>Bobot : 2,7 kg</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                            <i class="fa-solid fa-ruler text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                        </div>
-                        <span>Ukuran : - cm</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                            <i class="fa-solid fa-hospital text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-                        </div>
-                        <span>Rumah Sakit : RS Firdaus</span>
-                    </div>
-                </div>
-            </div>
+        <div
+          class="w-80 h-80 bg-color-secondary absolute bottom-0 right-5 lg:bottom-28 lg:right-40 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <!-- Blob end -->
+
+        <div
+          class="w-full lg:w-1/2 flex justify-center lg:justify-end mb-8 lg:mb-0"
+        >
+          <img
+            src="img/Nareshero1.jpeg"
+            alt="Nares Mavendra"
+            class="w-72 h-auto rounded-tl-3xl rounded-br-3xl drop-shadow-xl transform hover:scale-105 transition-transform duration-500"
+          />
         </div>
+
+        <div class="w-full lg:w-1/2 flex items-center">
+          <!-- Kartu untuk tampilan mobile -->
+          <div
+            class="bg-white bg-opacity-20 rounded-lg p-6 shadow-md flex-1 lg:hidden"
+          >
+            <div class="text-lg font-semibold mb-4 text-color-secondary">
+              Sang villain kecil ini telah muncul ke permukaan pada :
+            </div>
+            <div class="flex flex-col space-y-6 lg:space-y-5 text-gray-200">
+              <div class="flex items-center">
+                <div
+                  class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+                >
+                  <i
+                    class="fa-solid fa-calendar-alt text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                  ></i>
+                </div>
+                <span>Tanggal : 15 Juli 2024</span>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+                >
+                  <i
+                    class="fa-solid fa-map-marker-alt text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                  ></i>
+                </div>
+                <span>Lokasi : Jakarta, Indonesia</span>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+                >
+                  <i
+                    class="fa-solid fa-weight-scale text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                  ></i>
+                </div>
+                <span>Bobot : 2,7 kg</span>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+                >
+                  <i
+                    class="fa-solid fa-ruler text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                  ></i>
+                </div>
+                <span>Ukuran : - cm</span>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+                >
+                  <i
+                    class="fa-solid fa-hospital text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                  ></i>
+                </div>
+                <span>Rumah Sakit : RS Firdaus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Informasi untuk tampilan besar -->
+          <div
+            class="hidden lg:flex flex-col space-y-6 lg:space-y-5 pl-10 font-semibold text-lg text-gray-300"
+          >
+            <div class="text-xl font-semibold mb-4 pr-40 text-color-secondary">
+              Sang villain kecil ini telah muncul ke permukaan pada :
+            </div>
+            <div class="flex items-center">
+              <div
+                class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+              >
+                <i
+                  class="fa-solid fa-calendar-alt text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                ></i>
+              </div>
+              <span class="text-gray-200">Tanggal : 15 Juli 2024</span>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+              >
+                <i
+                  class="fa-solid fa-map-marker-alt text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                ></i>
+              </div>
+              <span>Lokasi : Jakarta, Indonesia</span>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+              >
+                <i
+                  class="fa-solid fa-weight-scale text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                ></i>
+              </div>
+              <span>Bobot : 2,7 kg</span>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+              >
+                <i
+                  class="fa-solid fa-ruler text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                ></i>
+              </div>
+              <span>Ukuran : - cm</span>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 mr-2 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+              >
+                <i
+                  class="fa-solid fa-hospital text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+                ></i>
+              </div>
+              <span>Rumah Sakit : RS Firdaus</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Gallery Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Gallery Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section id="gallery" class="py-20 bg-color-primary-light">
-        <div class="container mx-auto p-4">
-            <h2 class="text-3xl font-bold text-color-secondary text-center mb-12">Gallery</h2>
-            <div class="overflow-x-auto">
-                <div class="flex space-x-4">
-                    <img src="gallery/gallery1.jpeg" alt="Gallery Image 1" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery2.jpeg" alt="Gallery Image 2" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery3.jpeg" alt="Gallery Image 3" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery4.jpeg" alt="Gallery Image 4" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery5.jpeg" alt="Gallery Image 5" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery6.jpeg" alt="Gallery Image 6" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery7.jpeg" alt="Gallery Image 7" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery8.jpeg" alt="Gallery Image 8" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery9.jpeg" alt="Gallery Image 9" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery10.jpeg" alt="Gallery Image 10" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery11.jpeg" alt="Gallery Image 11" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                    <img src="gallery/gallery12.jpeg" alt="Gallery Image 12" class="w-96 h-96 object-contain rounded-lg shadow-md">
-                </div>
-            </div>
+      <div class="container mx-auto p-4">
+        <h2 class="text-3xl font-bold text-color-secondary text-center mb-12">
+          Gallery
+        </h2>
+        <div class="overflow-x-auto">
+          <div class="flex space-x-4">
+            <img
+              src="gallery/gallery1.jpeg"
+              alt="Gallery Image 1"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery2.jpeg"
+              alt="Gallery Image 2"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery3.jpeg"
+              alt="Gallery Image 3"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery4.jpeg"
+              alt="Gallery Image 4"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery5.jpeg"
+              alt="Gallery Image 5"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery6.jpeg"
+              alt="Gallery Image 6"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery7.jpeg"
+              alt="Gallery Image 7"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery8.jpeg"
+              alt="Gallery Image 8"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery9.jpeg"
+              alt="Gallery Image 9"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery10.jpeg"
+              alt="Gallery Image 10"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery11.jpeg"
+              alt="Gallery Image 11"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+            <img
+              src="gallery/gallery12.jpeg"
+              alt="Gallery Image 12"
+              class="w-96 h-96 object-contain rounded-lg shadow-md"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
-    
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
-<footer class="bg-color-primary-dark py-6 text-center text-gray-400">
-    <div class="container">
-        <p>Made with ❤️ by <span class="text-color-secondary font-Sacramento text-xl lg:text-2xl">Wildan Rafieu Damara.</span></p>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <footer class="bg-color-primary-dark py-6 text-center text-gray-400">
+      <div class="container">
+        <p>
+          Made with ❤️ by
+          <span class="text-color-secondary font-Sacramento text-xl lg:text-2xl"
+            >Wildan Rafieu Damara.</span
+          >
+        </p>
         <div class="flex justify-center space-x-4 mt-2">
-            <a href="https://www.instagram.com/rafidamara99" target="_blank" class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                <i class="fa-brands fa-instagram text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-            </a>
-            <a href="https://github.com/rafidamara99" target="_blank" class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                <i class="fa-brands fa-github text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-            </a>
-            <a href="https://www.twitter.com/@rafi_damara" target="_blank" class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 transition-colors duration-200 hover:bg-color-secondary ease-in-out">
-                <i class="fa-brands fa-twitter text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"></i>
-            </a>
+          <a
+            href="https://www.instagram.com/rafidamara99"
+            target="_blank"
+            class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+          >
+            <i
+              class="fa-brands fa-instagram text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+            ></i>
+          </a>
+          <a
+            href="https://github.com/rafidamara99"
+            target="_blank"
+            class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+          >
+            <i
+              class="fa-brands fa-github text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+            ></i>
+          </a>
+          <a
+            href="https://www.twitter.com/@rafi_damara"
+            target="_blank"
+            class="flex items-center justify-center border-2 border-color-secondary rounded-full w-10 h-10 transition-colors duration-200 hover:bg-color-secondary ease-in-out"
+          >
+            <i
+              class="fa-brands fa-twitter text-2xl text-color-secondary transition-colors duration-200 hover:text-white ease-in-out"
+            ></i>
+          </a>
         </div>
         <p class="mt-4">
-            <a href="#about" class="hover:text-color-secondary">About</a> |
-            <a href="#gallery" class="hover:text-color-secondary">Gallery</a> |
-            <a href="#contact" class="hover:text-color-secondary">Contact</a>
+          <a href="#about" class="hover:text-color-secondary">About</a> |
+          <a href="#gallery" class="hover:text-color-secondary">Gallery</a> |
+          <a href="#contact" class="hover:text-color-secondary">Contact</a>
         </p>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-       
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Back to top Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <a href="#home" id="back-to-top" class="hidden">
-        <i class="fa-solid fa-chevron-up"></i>
+      <i class="fa-solid fa-chevron-up"></i>
     </a>
-
-
 
     <!-- Script Js -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
