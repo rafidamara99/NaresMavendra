@@ -5,27 +5,26 @@
 /* Smooth scroll HTML */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* down animasi scroll more */
 
 @keyframes fadeDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
 
 .animate-fade-down {
-    animation: fadeDown 2s ease-in-out infinite;
+  animation: fadeDown 2s ease-in-out infinite;
 }
-
